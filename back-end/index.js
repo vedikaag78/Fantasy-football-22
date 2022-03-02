@@ -8,10 +8,11 @@ let bodyParser = require('body-parser');
 let cors = require('cors');
 var config = require('./config/database');
 let Routes = require('./src/routes/route');
-
+const { domainToASCII } = require('url');
+const dotenv = require('dotenv');
 const dir = __dirname;
-// constants, variables, arrays
-
+// constants, variables, array
+dotenv.config();
 // using the dependencies
 app.use(cors());
 app.use(bodyParser.json());

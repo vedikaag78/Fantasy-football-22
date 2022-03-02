@@ -8,7 +8,7 @@
             <v-container absolute fluid>
               <v-row>
                 <v-col cols="12">
-                  <v-card class="mx-auto" max-width="600" outlined color="#2196F3">
+                  <v-card class="elevation-8 mx-auto"  max-width="600" outlined color="#90CAF9">
                     <v-list-item three-line>
                       <v-list-item-content>
                         <div class="subtitle-2">NAME</div>
@@ -22,7 +22,7 @@
                   </v-card>
                 </v-col>
                 <v-col cols="12">
-                  <v-card class="mx-auto" max-width="600" outlined color="#2196F3">
+                  <v-card class="mx-auto" max-width="600" outlined color="#64B5F6">
                     <v-list-item three-line>
                       <v-list-item-content>
                         <div class="subtitle-2">POSITION</div>
@@ -37,7 +37,7 @@
                   </v-card>
                 </v-col>
                 <v-col cols="12">
-                  <v-card class="mx-auto" max-width="600" outlined color="#2196F3">
+                  <v-card class="mx-auto" max-width="600" outlined color="#42A5F5">
                     <v-list-item three-line>
                       <v-list-item-content>
                         <div class="subtitle-2">PRICE</div>
@@ -56,9 +56,9 @@
               <v-row align="center">
                 <v-col>
                   <v-card class="elevation-12">
-                    <v-toolbar color="#2196F3" dark flat>
+                    <v-toolbar color="#0D47A1" dark flat>
                       <v-spacer></v-spacer>
-                      <v-toolbar-title>BID DETAILS</v-toolbar-title>
+                      <v-toolbar-title class="font-weight-medium">BID DETAILS</v-toolbar-title>
                       <v-spacer />
                     </v-toolbar>
                     <v-card-text>
@@ -77,8 +77,8 @@
 
                     <v-card-actions>
                       <v-spacer />
-                      <v-btn @click="submit()" color="primary">SOLD</v-btn>
-                      <v-btn light @click="unsold()" color="red">UNSOLD</v-btn>
+                      <v-btn @click="submit()" color="green" dark rounded>SOLD</v-btn>
+                      <v-btn light @click="unsold()" color="red" rounded>UNSOLD</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-col>

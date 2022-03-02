@@ -1,6 +1,6 @@
 
 module.exports = {
-    'db' : 'mongodb://mongo:27017/fantasyfootball',
+    'db' : 'mongodb+srv://Vedikaag78:jmQRtHqLYp2pMdri@cluster0.njogn.mongodb.net/test',
     'secret' : 'rohan',
     'isStarted' : false,
     'lastPlayer' : ''

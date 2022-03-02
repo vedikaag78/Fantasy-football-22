@@ -125,7 +125,8 @@ html {
 	align-items: center;
 	background: linear-gradient(to right bottom, #272829, #37383b, #272829);
 	background-image: url("https://i.gifer.com/qhn.gif") !important;
-	background-position-x: -30em;
+	/* background-image: url("../../public/homebg.mp4") !important; */
+    background-position-x: -30em;
 	background-size: cover;
 	display: flex;
 	flex-direction: row;

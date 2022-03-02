@@ -7,11 +7,11 @@
       <span class="bg"></span>
       <v-content>
         <v-card class="mx-auto overflow-hidden">
-          <v-app-bar color="red ">
+          <v-app-bar class="headbg" >
             <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
             <v-spacer />
             <center>
-              <v-toolbar-title>
+              <v-toolbar-title class="headfont">
                 <strong>TEAM DETAILS</strong>
               </v-toolbar-title>
             </center>
@@ -37,14 +37,14 @@
         <v-container fluid>
           <v-row align="center" justify="center">
             <router-link tag="span" to="/players">
-              <v-btn color="red darken-4">Back to Auction</v-btn>
+              <v-btn color="red darken-4" rounded>Back to Auction</v-btn>
             </router-link>
           </v-row>
           <v-data-iterator :items="Teams" hide-default-footer>
             <template v-slot:default="props">
               <v-row>
                 <v-col v-for=" team in props.items" :key="team.name" cols="12" sm="6" lg="4">
-                  <v-card color="#2196F3">
+                  <v-card class=" elevation-12 style-card" color="#2196F3">
                     <v-card-title class="subheading font-weight-bold">{{ team.name }}</v-card-title>
 
                     <v-list dense>
@@ -134,8 +134,8 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.4;
-  background: url("../../img/bg1.png") no-repeat;
+  opacity: 0.8;
+  background: url("../../img/b4.png") no-repeat;
   background-size: cover;
   background-color: blue;
   transform: scale(1.1);
@@ -156,6 +156,23 @@ export default {
   webkit-animation: spin 4s linear infinite;
   -moz-animation: spin 4s linear infi-nite;
   animation: spin 4s linear infinite;
+}
+@import url("http://fonts.cdnfonts.com/css/pf-tempesta-seven");
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@100&display=swap');
+.headfont{
+   font-family: "PF Tempesta Seven", sans-serif;
+	font-family: "PF Tempesta Seven Extended", sans-serif;
+	font-family: "PF Tempesta Seven Condensed", sans-serif;
+	font-family: "PF Tempesta Seven Compressed", sans-serif; 
+}
+.headbg{
+  background: rgba(177, 226, 87, 0.685) !important;
+  backdrop-filter: blur(5px);
+
+}
+.style-card{
+  backdrop-filter: blur(8px);
+	background: rgba(70, 68, 68, 0.8) !important;
 }
 @-moz-keyframes spin {
   100% {

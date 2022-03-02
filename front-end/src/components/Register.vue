@@ -180,6 +180,7 @@ export default {
   backdrop-filter: blur(5px);
 
 }
+
 .style-card{
   backdrop-filter: blur(8px);
 	background: rgba(70, 68, 68, 0.8) !important;
